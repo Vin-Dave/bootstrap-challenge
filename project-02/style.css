@@ -1,5 +1,9 @@
-[class*="col-"] {
+[class*="col"] {
   background: yellow;
   border: 2px solid black;
   text-align: center;
+}
+
+.h100px {
+  height: 100px;
 }

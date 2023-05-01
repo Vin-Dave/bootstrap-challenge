@@ -1,0 +1,44 @@
+.carousel-item {
+  background-size: cover;
+}
+
+.ad1 {
+  background: url(https://source.unsplash.com/1600x300/?hotel) no-repeat center
+    center;
+}
+
+.ad2 {
+  background: url(https://source.unsplash.com/1600x300/?vacations) no-repeat
+    center center;
+}
+
+.ad3 {
+  background: url(https://source.unsplash.com/1600x300/?skyscraper) no-repeat
+    center center;
+}
+
+@media (max-width: 576px) {
+  .carousel-item {
+    min-height: 12rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .carousel-item {
+    min-height: 17rem;
+  }
+}
+
+#newsletter-box {
+  background-size: cover;
+  background: url(https://source.unsplash.com/1600x300/?island) no-repeat center
+    center;
+}
+
+.form-box {
+  width: 20rem;
+}
+
+footer a {
+  color: #aaaaab;
+}

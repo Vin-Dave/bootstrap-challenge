@@ -61,7 +61,7 @@ body {
   font-size: 1.5rem;
 }
 .accordion-button {
-  padding: 1.2rem;
+  padding: 1.3rem;
   font-size: 2rem;
 }
 .container-boxes h3 {
@@ -70,4 +70,35 @@ body {
 }
 .container-icon {
   font-size: 3.5rem;
+}
+.skills {
+  background-color: rgb(248, 248, 248);
+}
+.skills .card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+.skills .card-title {
+  font-size: 2.2rem;
+}
+
+.accordion-button:not(.colapsed) {
+  color: gray;
+  background-color: rgb(248, 248, 248);
+}
+.contact h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.contact .submit-btn {
+  font-size: 1.5rem;
+}
+[id] {
+  scroll-margin-top: 84px;
+}
+@media (min-width: 992px) {
+  [id] {
+    scroll-margin-top: 69px;
+  }
 }

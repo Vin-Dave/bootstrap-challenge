@@ -1,0 +1,120 @@
+:root {
+  --background-color-accent-1: #1e2b3e;
+  --background-color-accent-2: #121a26;
+  --b-font: 5rem;
+  --h2-font: 3rem;
+  --p-font: 1rem;
+  --fontcolor: #fff;
+  --fontcolor-2: #ccc;
+  --accent-1: #ccc;
+  --accent-2: #7140bf;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+.shadow-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+
+span {
+  font-weight: 700;
+  color: var(--accent-2);
+}
+nav {
+  font-size: 2rem;
+}
+.navbar-toggler {
+  font-size: 3rem;
+}
+.navbar-brand {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+header {
+  font-size: 2rem;
+}
+.carousel-item {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.carousel-img-one {
+  background-image: url("./img/main-carousel-1.jpg");
+}
+.carousel-img-two {
+  background-image: url("./img/main-carousel-2.jpg");
+}
+.carousel-img-three {
+  background-image: url("./img/main-carousel-3.jpg");
+}
+
+.main-section {
+  padding: 5em 0;
+}
+.section-box i {
+  font-size: 3.5rem;
+}
+.section-box h3 {
+  font-size: 2.5rem;
+}
+
+.home-passion {
+  position: relative;
+  height: 350px;
+  background-image: url("/img/main-carousel-2-hq.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.home-brand h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+footer {
+  font-size: 1.6rem;
+}
+
+.aboutus-hero {
+  background-image: url("img/main-carousel-1.jpg");
+  background-position: bottom;
+}
+
+@media (min-width: 1400px) {
+  .carousel-item {
+    height: 600px;
+  }
+
+  .carousel-img-one {
+    background-image: url("./img/main-carousel-1-hq.jpg");
+  }
+  .carousel-img-two {
+    background-image: url("./img/main-carousel-2-hq.jpg");
+  }
+  .carousel-img-three {
+    background-image: url("./img/main-carousel-3-hq.jpg");
+  }
+}

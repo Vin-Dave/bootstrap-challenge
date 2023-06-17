@@ -19,6 +19,13 @@
 html {
   font-size: 62.5%;
 }
+
+body {
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+
 .shadow-hero {
   position: absolute;
   top: 0;
@@ -28,12 +35,12 @@ html {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
+.main-hero {
+  position: relative;
+  height: 200px;
+  z-index: 0;
+  background-image: url(img/main-carousel-1.jpg);
 }
-
 span {
   font-weight: 700;
   color: var(--accent-2);
@@ -98,11 +105,45 @@ footer {
   font-size: 1.6rem;
 }
 
-.aboutus-hero {
-  background-image: url("img/main-carousel-1.jpg");
+.social-icons {
+  margin: 20px 100px;
+}
+.social-icons i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 15px;
+  height: 45px;
+  width: 45px;
+  font-size: 22px;
+  background: var(--accent-2);
+  color: var(--fontcolor);
+  transition: all 0.45s ease;
+}
+.social-icons a {
+  text-decoration: none;
+}
+
+.social-icons i:hover {
+  background: var(--fontcolor);
+  color: var(--accent-2);
+}
+
+.aboutme-hero {
+  background-image: url("img/main-carousel-1-hq.jpg");
   background-position: bottom;
 }
 
+.main-hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  height: 100%;
+}
+
+/* ****** */
 @media (min-width: 1400px) {
   .carousel-item {
     height: 600px;

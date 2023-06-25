@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
     <link
@@ -15,23 +21,13 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
-    <title>Portfolio Vin-Dave</title>
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary py-4 fixed-top"
-      id="#navbar-example"
-    >
-      <div class="container">
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4 fixed-top">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#"
-          ><i class="bi bi-person-workspace __color p-2"></i>Vin-Dave</a
+          >&lt;/&gt; <span class="logo">Vin</span>Dave</a
         >
         <button
           class="navbar-toggler"
@@ -47,275 +43,18 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link active" href="#home">Home</a>
-            <a class="nav-link" href="#projects">Projekty</a>
-            <a class="nav-link" href="#aboutme">O mnie</a>
-            <a class="nav-link" href="#contact">Kontakt</a>
+            <a class="nav-link" href="#aboutme">About Me</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
       </div>
     </nav>
-    <section class="home" id="home">
-      <div
-        class="container h-100 d-flex flex-column justify-content-center align-items-center text-light text-center"
-      >
-        <p class="display-1">Vin-Dave</p>
-        <p class="welcome-text mb-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-          tenetur nemo. Earum nesciunt quidem velit molestias deleniti nostrum
-        </p>
-        <a href="#projects" class="btn btn-outline-light">Więcej o mnie</a>
-        <div class="hero-shadow"></div>
-      </div>
-    </section>
-
-    <main>
-      <section id="projects">
-        <div class="container py-5 container-boxes">
-          <div class="row text-center">
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="contaner-boxes m-3 p-4 p-lg-5 border text-dark">
-                <h3>Projekt 1</h3>
-                <i class="bi bi-check container-icon"></i>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Architecto, accusamus.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div
-                class="contaner-boxes m-3 p-4 p-lg-5 border text-light bg-dark"
-              >
-                <h3>Projekt 2</h3>
-                <i class="bi bi-check container-icon"></i>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Architecto, accusamus.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="contaner-boxes m-3 p-4 p-lg-5 border text-dark">
-                <h3>Projekt 3</h3>
-                <i class="bi bi-check container-icon"></i>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Architecto, accusamus.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div
-                class="contaner-boxes m-3 p-4 p-lg-5 border text-light bg-dark"
-              >
-                <h3>Projekt 4</h3>
-                <i class="bi bi-check container-icon"></i>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Architecto, accusamus.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container py-5">
-          <p class="display-3 text-uppercase orange-color text-center mb-4">
-            Co dalej?
-          </p>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem, assumenda.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem, assumenda.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem, assumenda.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="skills" id="skills py-5">
-        <div class="container py-5 text-center">
-          <p class="display-3 orange-color">Umiejętności</p>
-
-          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
-            <div class="col">
-              <div class="card h-100">
-                <img src="img1.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Projekt 1</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="img1.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Projekt 1</h5>
-                  <p class="card-text">This is a short card.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="img1.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Projekt 1</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="img1.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Projekt 1</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact bg-dark text-light py-5">
-        <div class="container text-center py-5">
-          <p class="display-3 pb-lg-5 text-uppercase">Napisz do mnie!</p>
-
-          <div class="row">
-            <div class="col-lg-9 my-5 m-lg-0">
-              <form>
-                <div class="input-group mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Imię i nazwisko"
-                  />
-                </div>
-                <div class="input-group mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Adres mailowy"
-                  />
-                </div>
-                <div class="input-group mb-3">
-                  <textarea
-                    rows="6"
-                    class="form-control"
-                    placeholder="Treść wiadomości"
-                  ></textarea>
-                </div>
-
-                <input
-                  type="submit"
-                  value="Wyślij"
-                  class="btn btn-light px-4 py-2 submit-btn"
-                />
-              </form>
-            </div>
-            <div class="col-lg-3 mt-4 m-lg-0 contact-info">
-              <h3>Adres:</h3>
-              <p class="orange-color">Vin-Dave</p>
-              <p>
-                <i class="bi bi-geo-alt orange-color"></i> Częstochowa
-                <br />
-                42-200 Czestochowa
-              </p>
-              <p><i class="bi bi-phone orange-color"></i>+48 000 000 000</p>
-              <p><i class="bi bi-at orange-color"></i> vin@mail.pl</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="bg-dark text-light border-top">
-      <p class="text-center mb-0 py-5">&copy Vin-Dave</p>
-    </footer>
-    <script src="script.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -47,6 +47,7 @@ body {
 }
 .navbar-toggler-icon,
 .nav-link {
+  margin: 0 5px;
   font-size: 1.4rem;
 }
 .home-section {

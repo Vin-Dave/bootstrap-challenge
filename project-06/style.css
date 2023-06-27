@@ -16,7 +16,16 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+[id] {
+  scroll-margin-top: 51px;
+}
+@media (min-width: 992px) {
+  [id] {
+    scroll-margin-top: 81px;
+  }
+}
 body {
+  position: relative;
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
 
@@ -104,4 +113,8 @@ body {
 }
 .project-section .col:hover {
   transform: translateY(-10px);
+}
+
+.contact-section .submit-form {
+  font-size: 1.6rem;
 }

@@ -88,3 +88,20 @@ body {
 .box-about-me:hover {
   transform: scale(1.1);
 }
+.project-section {
+  background-color: var(--accent-1);
+}
+.project-section .card-img-top {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.project-section .card-title {
+  font-size: 2rem;
+}
+.project-section .col {
+  transition: transform 0.45s ease-in-out;
+}
+.project-section .col:hover {
+  transform: translateY(-10px);
+}
